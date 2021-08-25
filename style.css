@@ -191,7 +191,7 @@ body {
 
 /* about section */
 .about-section {
-  margin-top: 10%;
+  margin: 10% auto;
   text-align: center;
 }
 
@@ -203,4 +203,15 @@ body {
 
 .about-text {
   color: var(--off-white)
+}
+
+/*portrait section*/
+.founder-portrait {
+  border: solid 3px var(--icing-pink);
+  max-width: 200px;
+}
+
+.portrait-caption {
+  color: var(--off-white);
+  font-family: 'Alex Brush';
 }
