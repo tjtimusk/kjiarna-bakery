@@ -1,0 +1,203 @@
+/*Brand Colors*/
+:root {
+  --icing-pink: #eea3a2;
+  --pastel-purple: #eadbff;
+  --lightest-blue: #b9dcff;
+  --spring-green: #a9ffb5;
+  --off-black: #202020;
+  --off-white: #fffdf3;
+}
+
+body {
+  align-items: center;
+  background:
+    linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("Media/Images/logo/background - 2.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: clamp(14px, 2vw, 20px);
+  height: 100vh;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+}
+
+@font-face {
+  font-family: 'Alex Brush';
+  src: url('Media/Fonts/Alex_Brush/AlexBrush-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*Nav Bar Styles*/
+.nav-bar-container {
+  background-color: var(--off-white);
+  display: flex;
+  height: clamp(40px, 5vw, 80px);
+  justify-content: space-between;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.logo-container {
+  height: 100%;
+  object-fit: fill;
+}
+
+.nav-bar-logo {
+  float: left;
+  height: 100%;
+  width: auto;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.menu li {
+  float: right;
+  list-style: none;
+  margin: 1vh 1vw 1vh;
+}
+
+.menu li a {
+  color: var(--off-black);
+  font-size: clamp(14px, 2vw, 18px);
+  padding: 1em 1em;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background-color: var(--icing-pink);
+}
+
+/*Welcome page stylings*/
+.welcome-page-content {
+  align-items: center;
+  background:
+    linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("Media/Images/Baked-Goods/goth-cupcake.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh);
+  justify-content: center;
+  margin: 0 auto;
+  width: 100vw;
+}
+
+.welcome-text {
+  color: var(--off-white);
+  font-family: 'Alex Brush', cursive;
+  font-size: clamp(35px, 10vw, 100px);
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.welcome-btn {
+  border: solid 1px var(--icing-pink);
+  color: var(--off-white);
+  display: inline-block;
+  font-family: 'Alex Brush', cursive;
+  font-size: clamp(12px, 4.5vw, 35px);
+  padding: .1em 1em;
+  text-decoration: none;
+  text-align: center;
+  transition: opacity 0.5s ease-in;
+  transition: border 0.5s ease-in;
+}
+
+.welcome-btn:hover {
+  background-color: var(--icing-pink);
+  color: var(--off-black);
+}
+
+/* Landing Styles */
+.landing-page-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-page-banner {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh);
+  justify-content: center;
+  margin: 0 auto;
+  width: 100vw;
+}
+
+.logo-text {
+  color: var(--off-white);
+  font-family: 'Alex Brush', cursive;
+  font-size: clamp(35px, 10vw, 100px);
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banner-text {
+  color: var(--off-white);
+}
+
+/* product section */
+.product-section-header {
+  color: var(--off-white);
+  font-family: 'Alex Brush';
+  font-size: 2.5rem;
+}
+
+.product-lineup {
+  display: flex;
+  /*background: var(--off-white);*/
+  width: 100%;
+  justify-content: space-around;
+  padding: 0 0 2%;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-width: 400px;
+  /*background: var(--off-white);*/
+}
+
+.product-img {
+  max-width: 400px;
+  max-height: 200px;
+  width: 100%;
+  border: solid 3px var(--icing-pink)
+}
+
+.product-description {
+  color: var(--off-white);
+}
+
+.product-card-header {
+  color: var(--off-white);
+}
+
+/* about section */
+.about-section {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.about-header {
+  color: var(--off-white);
+  font-family: 'Alex Brush';
+  font-size: 2.5rem;
+}
+
+.about-text {
+  color: var(--off-white)
+}
